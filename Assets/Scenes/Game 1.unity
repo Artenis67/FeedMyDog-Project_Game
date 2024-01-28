@@ -633,6 +633,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1906072107}
+  - component: {fileID: 1906072108}
   m_Layer: 0
   m_Name: Kibble spawners parent
   m_TagString: Untagged
@@ -660,6 +661,24 @@ Transform:
   - {fileID: 220137776}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1906072108
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1906072106}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 66b330c82b95921488ce582d90052a32, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spawner1: {fileID: 1606361880}
+  spawner2: {fileID: 714871061}
+  spawner3: {fileID: 969031949}
+  spawner4: {fileID: 727459651}
+  spawner5: {fileID: 220137775}
+  kibblePrefab: {fileID: 67311846101706653, guid: 0acd7530ccf273a4787506746a6fb73a, type: 3}
 --- !u!1 &2054434961
 GameObject:
   m_ObjectHideFlags: 0
@@ -814,6 +833,63 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9bf6716765a93da49a13a4615911e092, type: 3}
+--- !u!1001 &4246119877960679841
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 67311846101706653, guid: 0acd7530ccf273a4787506746a6fb73a, type: 3}
+      propertyPath: m_Name
+      value: Falling Dog Food
+      objectReference: {fileID: 0}
+    - target: {fileID: 2833617285747955178, guid: 0acd7530ccf273a4787506746a6fb73a, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -3.18
+      objectReference: {fileID: 0}
+    - target: {fileID: 2833617285747955178, guid: 0acd7530ccf273a4787506746a6fb73a, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 5.23
+      objectReference: {fileID: 0}
+    - target: {fileID: 2833617285747955178, guid: 0acd7530ccf273a4787506746a6fb73a, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2833617285747955178, guid: 0acd7530ccf273a4787506746a6fb73a, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2833617285747955178, guid: 0acd7530ccf273a4787506746a6fb73a, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2833617285747955178, guid: 0acd7530ccf273a4787506746a6fb73a, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2833617285747955178, guid: 0acd7530ccf273a4787506746a6fb73a, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2833617285747955178, guid: 0acd7530ccf273a4787506746a6fb73a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2833617285747955178, guid: 0acd7530ccf273a4787506746a6fb73a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2833617285747955178, guid: 0acd7530ccf273a4787506746a6fb73a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 0acd7530ccf273a4787506746a6fb73a, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
@@ -824,3 +900,4 @@ SceneRoots:
   - {fileID: 4065489012212828645}
   - {fileID: 210819472}
   - {fileID: 728561399}
+  - {fileID: 4246119877960679841}
