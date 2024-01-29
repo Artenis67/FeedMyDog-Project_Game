@@ -10,8 +10,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1152989751429521877}
   - component: {fileID: 4318270118299800723}
-  - component: {fileID: 905453984524371988}
   - component: {fileID: 6029528893749851007}
+  - component: {fileID: 905453984524371988}
   - component: {fileID: 5224147777172184714}
   m_Layer: 0
   m_Name: Bowl
@@ -87,18 +87,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &905453984524371988
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3481017237407158799}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ed44eb7e015be654a9269e049ed2f9f2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!58 &6029528893749851007
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -134,6 +122,18 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0.009722534}
   serializedVersion: 2
   m_Radius: 0.11585826
+--- !u!114 &905453984524371988
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3481017237407158799}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ed44eb7e015be654a9269e049ed2f9f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &5224147777172184714
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -148,3 +148,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   collider2D: {fileID: 6029528893749851007}
   scoreTextUIManager: {fileID: 0}
+  score: 0

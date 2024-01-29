@@ -15,12 +15,18 @@ public class BowlCollectorScript : MonoBehaviour
     {
         score = 0;
     }
-
+    
     private void OnCollisionEnter(Collision other)
     {
+        Debug.Log("CHOSE TOUCHE");
+        
         if (other.gameObject.CompareTag("Kibble"))
         {
+            Debug.Log("KIBBLE TOUCHE");
+            
             IncreaseScore();
+            
+            Destroy(other.gameObject);
         }
     }
 
