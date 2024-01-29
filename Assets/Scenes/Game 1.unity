@@ -679,6 +679,8 @@ MonoBehaviour:
   spawner4: {fileID: 727459651}
   spawner5: {fileID: 220137775}
   kibblePrefab: {fileID: 67311846101706653, guid: 0acd7530ccf273a4787506746a6fb73a, type: 3}
+  globalSpawnCounter: 0
+  maxSpeedSpawn: 0
 --- !u!1 &2054434961
 GameObject:
   m_ObjectHideFlags: 0
@@ -782,11 +784,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1152989751429521877, guid: 9bf6716765a93da49a13a4615911e092, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.08
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1152989751429521877, guid: 9bf6716765a93da49a13a4615911e092, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -3.46
+      value: -3
       objectReference: {fileID: 0}
     - target: {fileID: 1152989751429521877, guid: 9bf6716765a93da49a13a4615911e092, type: 3}
       propertyPath: m_LocalPosition.z
@@ -825,6 +827,10 @@ PrefabInstance:
       value: Bowl
       objectReference: {fileID: 0}
     - target: {fileID: 5224147777172184714, guid: 9bf6716765a93da49a13a4615911e092, type: 3}
+      propertyPath: collider2D
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 5224147777172184714, guid: 9bf6716765a93da49a13a4615911e092, type: 3}
       propertyPath: scoreTextUIManager
       value: 
       objectReference: {fileID: 2054434965}
@@ -847,11 +853,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2833617285747955178, guid: 0acd7530ccf273a4787506746a6fb73a, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -3.18
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2833617285747955178, guid: 0acd7530ccf273a4787506746a6fb73a, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 5.23
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2833617285747955178, guid: 0acd7530ccf273a4787506746a6fb73a, type: 3}
       propertyPath: m_LocalPosition.z
@@ -884,10 +890,6 @@ PrefabInstance:
     - target: {fileID: 2833617285747955178, guid: 0acd7530ccf273a4787506746a6fb73a, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8926476821951908366, guid: 0acd7530ccf273a4787506746a6fb73a, type: 3}
-      propertyPath: m_SortingOrder
-      value: 4
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

@@ -1,12 +1,12 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class BowlCollectorScript : MonoBehaviour
 {
     [Header("Components")] 
-    [SerializeField] private Collider2D collider2D;
     [SerializeField] private ScoreTextUIManager scoreTextUIManager;
 
     public int score;
@@ -15,24 +15,20 @@ public class BowlCollectorScript : MonoBehaviour
     {
         score = 0;
     }
-    
-    private void OnCollisionEnter(Collision other)
+
+    private void OnTriggerEnter2D(Collider2D other)
     {
-        Debug.Log("CHOSE TOUCHE");
-        
         if (other.gameObject.CompareTag("Kibble"))
         {
-            Debug.Log("KIBBLE TOUCHE");
-            
             IncreaseScore();
             
             Destroy(other.gameObject);
-        }
+        } 
     }
 
     private void IncreaseScore()
     {
-        score = +1;
+        score++;
         
         scoreTextUIManager.SetScoreText(score);
     }

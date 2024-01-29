@@ -11,10 +11,10 @@ GameObject:
   - component: {fileID: 2833617285747955178}
   - component: {fileID: 8926476821951908366}
   - component: {fileID: 4314625633908618548}
-  - component: {fileID: 2100644678135449921}
+  - component: {fileID: 6663801021625284256}
   m_Layer: 0
   m_Name: Falling Dog Food
-  m_TagString: Untagged
+  m_TagString: Kibble
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -113,8 +113,8 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 5
---- !u!58 &2100644678135449921
-CircleCollider2D:
+--- !u!70 &6663801021625284256
+CapsuleCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -145,6 +145,6 @@ CircleCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  serializedVersion: 2
-  m_Radius: 0.16
+  m_Offset: {x: -0.0013110638, y: 0.0030590892}
+  m_Size: {x: 0.20375443, y: 0.27892083}
+  m_Direction: 0
