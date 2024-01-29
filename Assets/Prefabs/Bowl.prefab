@@ -113,8 +113,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   scoreTextUIManager: {fileID: 0}
-  life: 0
-  maxLife: 0
+  lifeUISystem: {fileID: 0}
+  life: 3
+  maxLife: 3
   score: 0
 --- !u!50 &1590733200887201428
 Rigidbody2D:
