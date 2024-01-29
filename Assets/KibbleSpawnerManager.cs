@@ -19,7 +19,8 @@ public class KibbleSpawnerManager : MonoBehaviour
 
     private bool onIsSpawn = false;
     [SerializeField] private int globalSpawnCounter;
-    [SerializeField] private float maxSpeedSpawn = 5;
+    [SerializeField] private float maxSpeedSpawn = 1.5f;
+    [SerializeField] private float minSpeedSpawn = 0.5f;
 
     private void Start()
     {
@@ -40,7 +41,7 @@ public class KibbleSpawnerManager : MonoBehaviour
     {
         onIsSpawn = true;
         
-        yield return new WaitForSeconds(Random.Range(0.5f, maxSpeedSpawn));
+        yield return new WaitForSeconds(Random.Range(minSpeedSpawn, maxSpeedSpawn));
         
         // Générer un indice aléatoire entre 1 et 5
         int randomIndex = Random.Range(1, 6);
@@ -91,31 +92,37 @@ public class KibbleSpawnerManager : MonoBehaviour
                     {
                         if (globalSpawnCounter > 50)
                         {
-                            maxSpeedSpawn = 1f;
+                            maxSpeedSpawn = 0.3f;
+                            minSpeedSpawn = 0.3f;
                         }
                         else
                         {
-                            maxSpeedSpawn = 2f;
+                            maxSpeedSpawn = 0.7f;
+                            minSpeedSpawn = 0.5f;
                         }
                     }
                     else
                     {
-                        maxSpeedSpawn = 2.5f;
+                        maxSpeedSpawn = 0.8f;
+                        minSpeedSpawn = 0.5f;
                     }
                 }
                 else
                 {
-                    maxSpeedSpawn = 3f;
+                    maxSpeedSpawn = 1f;
+                    minSpeedSpawn = 0.5f;
                 }
             }
             else
             {
-                maxSpeedSpawn = 3.5f;
+                maxSpeedSpawn = 1.2f;
+                minSpeedSpawn = 0.5f;
             }
         }
         else
         {
-            maxSpeedSpawn = 4f;
+            maxSpeedSpawn = 1.5f;
+            minSpeedSpawn = 0.5f;
         }
     }
 }

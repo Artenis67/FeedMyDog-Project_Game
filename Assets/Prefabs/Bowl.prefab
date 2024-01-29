@@ -112,8 +112,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 98a1b645cfde186408e5f939ccbafbf2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  collider2D: {fileID: 0}
   scoreTextUIManager: {fileID: 0}
+  life: 0
+  maxLife: 0
   score: 0
 --- !u!50 &1590733200887201428
 Rigidbody2D:
@@ -174,6 +175,6 @@ CapsuleCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.0017966006, y: -0.02084008}
-  m_Size: {x: 0.2603583, y: 0.18203422}
+  m_Offset: {x: 0.0017966073, y: 0.034658458}
+  m_Size: {x: 0.26035833, y: 0.071038604}
   m_Direction: 1
