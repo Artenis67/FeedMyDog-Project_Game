@@ -1702,14 +1702,6 @@ PrefabInstance:
       value: Bowl
       objectReference: {fileID: 0}
     - target: {fileID: 5224147777172184714, guid: 9bf6716765a93da49a13a4615911e092, type: 3}
-      propertyPath: life
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 5224147777172184714, guid: 9bf6716765a93da49a13a4615911e092, type: 3}
-      propertyPath: maxLife
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 5224147777172184714, guid: 9bf6716765a93da49a13a4615911e092, type: 3}
       propertyPath: lifeUISystem
       value: 
       objectReference: {fileID: 1526467722}
