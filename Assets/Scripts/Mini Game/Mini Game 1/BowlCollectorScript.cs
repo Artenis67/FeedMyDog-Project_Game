@@ -9,11 +9,16 @@ public class BowlCollectorScript : MonoBehaviour
     [Header("Components")] 
     [SerializeField] private ScoreTextUIManager scoreTextUIManager;
     [SerializeField] private LifeUISystem lifeUISystem;
-    
+    [SerializeField] private GameOverUIScript gameOverUiScript;
+
+    [Header("Life and Score")]
     public int life = 3;
     public int maxLife = 3;
     public int score;
-
+    
+    [Header("ToDisables")]
+    [SerializeField] private Behaviour[] componentsToDisableWhenGameOver;
+    
     private void Start()
     {
         life = maxLife;
@@ -54,11 +59,14 @@ public class BowlCollectorScript : MonoBehaviour
 
     private void GameOver()
     {
-        Debug.LogError("GAME OVER !");
-    }
-
-    private void Update()
-    {
-        Debug.Log(life);
+        gameOverUiScript.GameOver();
+        
+        foreach (var component in componentsToDisableWhenGameOver)
+        {
+            if (component)
+            {
+                component.enabled = false;
+            }
+        }
     }
 }
