@@ -7,11 +7,6 @@ public class GameManager : MonoBehaviour
     public static GameManager Instance;
 
     public int score;
-    
-    [Header("TypeOfDog")] 
-    public bool KitchenAnimPart1;
-    public bool KitchenAnimPart2;
-    public bool KitchenAnimPart3;
 
     private void Awake()
     {
@@ -24,5 +19,10 @@ public class GameManager : MonoBehaviour
         {
             Destroy(gameObject);
         }
+    }
+    
+    public void ChangeSceneTo(string scene)
+    {
+        UnityEngine.SceneManagement.SceneManager.LoadScene(scene);
     }
 }

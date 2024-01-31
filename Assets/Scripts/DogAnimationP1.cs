@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class DogScript : MonoBehaviour
+public class DogAnimationP1 : MonoBehaviour
 {
     [Header("Animation System")] 
     [SerializeField] private Animator animator;
@@ -16,15 +16,7 @@ public class DogScript : MonoBehaviour
 
     void Start()
     {
-        CheckTypeOfDog();
-    }
-
-    void CheckTypeOfDog()
-    {
-        if (GameManager.Instance.KitchenAnimPart1)
-        {
-            StartCoroutine(KitchenAnimationPart1Sys(startAnimPosition, endAnimPosition, 1.25f));
-        }
+        StartCoroutine(KitchenAnimationPart1Sys(startAnimPosition, endAnimPosition, 1.25f));
     }
 
     IEnumerator KitchenAnimationPart1Sys(Vector3 start, Vector3 end, float duration)

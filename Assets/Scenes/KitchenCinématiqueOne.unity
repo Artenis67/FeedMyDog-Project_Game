@@ -244,9 +244,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bec9dc7e51a592047ae0c42ed576b1aa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  KitchenAnimPart1: 1
-  KitchenAnimPart2: 0
-  KitchenAnimPart3: 0
+  score: 0
 --- !u!4 &571786853
 Transform:
   m_ObjectHideFlags: 0
