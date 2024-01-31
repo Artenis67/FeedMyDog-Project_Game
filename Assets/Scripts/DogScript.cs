@@ -14,17 +14,6 @@ public class DogScript : MonoBehaviour
     [SerializeField] private Vector3 startAnimPosition;
     [SerializeField] private Vector3 endAnimPosition;
 
-    [Header("Components")] 
-    [SerializeField] private GameManager _gameManager;
-
-    private void Awake()
-    {
-        if (!_gameManager)
-        {
-            Debug.LogError("Game Manager missing in Dog !");
-        }
-    }
-
     void Start()
     {
         CheckTypeOfDog();
@@ -32,7 +21,7 @@ public class DogScript : MonoBehaviour
 
     void CheckTypeOfDog()
     {
-        if (_gameManager.KitchenAnimPart1)
+        if (GameManager.Instance.KitchenAnimPart1)
         {
             StartCoroutine(KitchenAnimationPart1Sys(startAnimPosition, endAnimPosition, 1.25f));
         }
@@ -54,7 +43,6 @@ public class DogScript : MonoBehaviour
             yield return null;
         }
 
-        // Assurez-vous que l'objet est exactement à la position d'arrivée à la fin
         transform.position = end;
 
         animator.SetBool(runParameterName, false);
