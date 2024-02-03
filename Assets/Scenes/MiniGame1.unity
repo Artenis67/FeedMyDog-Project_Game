@@ -938,10 +938,10 @@ RectTransform:
   - {fileID: 1524184456}
   m_Father: {fileID: 210819472}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 1147, y: 567}
+  m_SizeDelta: {x: -37, y: -25}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &834964196
 MonoBehaviour:
@@ -1841,9 +1841,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   score: 0
-  KitchenAnimPart1: 0
-  KitchenAnimPart2: 0
-  KitchenAnimPart3: 0
 --- !u!4 &1654699138
 Transform:
   m_ObjectHideFlags: 0
