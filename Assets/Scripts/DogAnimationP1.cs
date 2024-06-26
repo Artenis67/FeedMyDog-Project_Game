@@ -14,6 +14,9 @@ public class DogAnimationP1 : MonoBehaviour
     [SerializeField] private Vector3 startAnimPosition;
     [SerializeField] private Vector3 endAnimPosition;
 
+    [Header("NexAnimationSys")] [SerializeField]
+    private KitchenAnimationController kitchenAnimationController;
+
     void Start()
     {
         StartCoroutine(KitchenAnimationPart1Sys(startAnimPosition, endAnimPosition, 1.25f));
